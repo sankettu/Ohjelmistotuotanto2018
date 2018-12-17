@@ -2,9 +2,8 @@ package ohtu.kivipaperisakset;
 
 import java.util.Scanner;
 
-public class KPSTekoaly {
+public class KPSTekoaly extends KPS {
 
-    private static final Scanner scanner = new Scanner(System.in);
 
     public void pelaa() {
         Tuomari tuomari = new Tuomari();
@@ -36,6 +35,7 @@ public class KPSTekoaly {
         System.out.println("Kiitos!");
         System.out.println(tuomari);
     }
+
 
     private static boolean onkoOkSiirto(String siirto) {
         return "k".equals(siirto) || "p".equals(siirto) || "s".equals(siirto);

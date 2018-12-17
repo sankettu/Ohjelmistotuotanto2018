@@ -6,9 +6,8 @@ import java.util.Scanner;
 
 // Kivi-Paperi-Sakset, jossa voidaan valita pelataanko vastustajaa
 // vastaan vai ei
-public class KPSParempiTekoaly {
+public class KPSParempiTekoaly extends KPS {
 
-    private static final Scanner scanner = new Scanner(System.in);
 
     public void pelaa() {
         Tuomari tuomari = new Tuomari();
@@ -41,6 +40,7 @@ public class KPSParempiTekoaly {
         System.out.println("Kiitos!");
         System.out.println(tuomari);
     }
+
 
     private static boolean onkoOkSiirto(String siirto) {
         return "k".equals(siirto) || "p".equals(siirto) || "s".equals(siirto);
